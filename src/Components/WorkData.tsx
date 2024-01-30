@@ -1,0 +1,70 @@
+import { ChangeEvent, FormEvent } from "react";
+
+type Workplaces = {
+  firmenname: string;
+  position: string;
+  aufgaben: string;
+  start: string;
+  ende: string
+};
+
+interface Props {
+  workData: Workplaces;
+  handleInputChange(e: ChangeEvent<HTMLInputElement>, type: string): void;
+  workplacesToList(e: FormEvent):void
+}
+
+export default function WorkData({ workData, handleInputChange, workplacesToList }: Props) {
+  return (
+    <>
+      <form onSubmit={(e) => workplacesToList(e)}>
+        <h2>Berufslaufbahn</h2>
+        <div>
+          <label>Firmenname</label>
+          <input
+            type="text"
+            value={workData.firmenname}
+            onChange={(e) => handleInputChange(e, "firmenname")}
+          />
+        </div>
+
+        <div>
+          <label>Position</label>
+          <input
+            type="text"
+            value={workData.position}
+            onChange={(e) => handleInputChange(e, "position")}
+          />
+        </div>
+
+        <div>
+          <label>Aufgaben</label>
+          <input
+            type="text"
+            value={workData.aufgaben}
+            onChange={(e) => handleInputChange(e, "aufgaben")}
+          />
+        </div>
+
+        <div>
+          <label>Beginn des Arbeitsverhältnis</label>
+          <input
+            type="text"
+            value={workData.start}
+            onChange={(e) => handleInputChange(e, "start")}
+          />
+        </div>
+
+        <div>
+          <label>Ende des Arbeitsverhältnis</label>
+          <input
+            type="text"
+            value={workData.ende}
+            onChange={(e) => handleInputChange(e, "ende")}
+          />
+        </div>
+        <button type="submit">Hinzufügen</button>
+      </form>
+    </>
+  );
+}
