@@ -20,7 +20,7 @@ export default function WorkData({ workData, handleInputChange, workplacesToList
       <form id="workInput" onSubmit={(e) => workplacesToList(e)}>
         <h2>Berufslaufbahn</h2>
         <div className="wData">
-          <label className="workLabel">Firmenname</label>
+          <label className="workLabel">Firmenname:</label>
           <input
             className="workInput"
             type="text"
@@ -30,7 +30,7 @@ export default function WorkData({ workData, handleInputChange, workplacesToList
         </div>
 
         <div className="wData">
-          <label className="workLabel">Position</label>
+          <label className="workLabel">Position:</label>
           <input
             className="workInput"
             type="text"
@@ -40,7 +40,7 @@ export default function WorkData({ workData, handleInputChange, workplacesToList
         </div>
 
         <div className="wData">
-          <label className="workLabel">Aufgaben</label>
+          <label className="workLabel">Aufgaben:</label>
           <input
             className="workInput"
             type="text"
@@ -50,7 +50,7 @@ export default function WorkData({ workData, handleInputChange, workplacesToList
         </div>
 
         <div className="wData">
-          <label className="workLabel">Beginn des Arbeitsverhältnis</label>
+          <label className="workLabel">Beginn:</label>
           <input
             className="workInput"
             type="text"
@@ -60,7 +60,7 @@ export default function WorkData({ workData, handleInputChange, workplacesToList
         </div>
 
         <div className="wData">
-          <label className="workLabel">Ende des Arbeitsverhältnis</label>
+          <label className="workLabel">Ende:</label>
           <input
             className="workInput"
             type="text"

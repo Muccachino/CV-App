@@ -23,7 +23,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
       <form id="personalInputs">
         <h2>Persönliche Daten</h2>
         <div className="pData">
-          <label className="personalLabel">Vorname</label>
+          <label className="personalLabel">Vorname:</label>
           <input
             className="personalInput"
             type="text"
@@ -33,7 +33,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div>
         <div className="pData">
-          <label className="personalLabel">Nachname</label>
+          <label className="personalLabel">Nachname:</label>
           <input
             className="personalInput"
             type="text"
@@ -51,7 +51,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div> */}
         <div className="pData">
-          <label className="personalLabel">Straße</label>
+          <label className="personalLabel">Straße:</label>
           <input
             className="personalInput"
             type="text"
@@ -60,7 +60,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div>
         <div className="pData">
-          <label className="personalLabel">PLZ</label>
+          <label className="personalLabel">PLZ:</label>
           <input
             className="personalInput"
             type="text"
@@ -69,7 +69,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div>
         <div className="pData">
-          <label className="personalLabel">Stadt</label>
+          <label className="personalLabel">Stadt:</label>
           <input
             className="personalInput"
             type="text"
@@ -78,7 +78,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div>
         <div className="pData">
-          <label className="personalLabel">Land</label>
+          <label className="personalLabel">Land:</label>
           <input
             className="personalInput"
             type="text"
@@ -87,7 +87,7 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
           />
         </div>
         <div className="pData">
-          <label className="personalLabel">Telefonnummer</label>
+          <label className="personalLabel">Telefonnummer:</label>
           <input
             className="personalInput"
             type="text"

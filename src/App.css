@@ -22,7 +22,11 @@
 
             .personalInput {
                 grid-column: 2;
-                width: 50%;
+                width: 70%;
+                height: auto;
+                font-size: medium;
+                padding: 5px 5px 5px 10px;
+                justify-self: end;
             }
         }
 
@@ -37,9 +41,15 @@
 
             .schoolInput {
                 grid-column: 2;
-                width: 50%;
+                width: 350px;
+                height: auto;
+                font-size: medium;
+                padding: 5px 5px 5px 10px;   
+                justify-self: end;
             }
+ 
         }
+
 
         .wData {
             display: grid;
@@ -52,7 +62,11 @@
 
             .workInput {
                 grid-column: 2;
-                width: 50%;
+                width: 70%;
+                height: auto;
+                font-size: medium;
+                padding: 5px 5px 5px 10px;            
+                justify-self: end;
             }
         }
 

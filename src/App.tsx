@@ -1,5 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from "react";
+import "@picocss/pico"
 import "./App.css";
+
 import PersonalData from "./Components/PersonalData";
 import PersonalView from "./Components/PersonalView";
 import SchoolData from "./Components/SchoolData";

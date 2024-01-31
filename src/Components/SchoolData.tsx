@@ -21,7 +21,7 @@ export default function SchoolData({ schoolData, handleInputChange, schoolToList
 
 
         <div className="sData">
-          <label className="schoolLabel">Name der Bildungseinrichtung</label>
+          <label className="schoolLabel">Bildungseinrichtung:</label>
           <input
             className="schoolInput"
             type="text"
@@ -31,7 +31,7 @@ export default function SchoolData({ schoolData, handleInputChange, schoolToList
         </div>
 
         <div className="sData">
-          <label className="schoolLabel">Fach</label>
+          <label className="schoolLabel">Fach:</label>
           <input
             className="schoolInput"
             type="text"
@@ -41,7 +41,7 @@ export default function SchoolData({ schoolData, handleInputChange, schoolToList
         </div>
 
         <div className="sData">
-          <label className="schoolLabel">Abschluss</label>
+          <label className="schoolLabel">Abschluss:</label>
           <input
             className="schoolInput"
             type="text"
@@ -51,7 +51,7 @@ export default function SchoolData({ schoolData, handleInputChange, schoolToList
         </div>
 
         <div className="sData">
-          <label className="schoolLabel">Datum des Abschlusses</label>
+          <label className="schoolLabel">Datum des Abschlusses:</label>
           <input
             className="schoolInput"
             type="text"
