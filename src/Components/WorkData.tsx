@@ -17,47 +17,52 @@ interface Props {
 export default function WorkData({ workData, handleInputChange, workplacesToList }: Props) {
   return (
     <>
-      <form onSubmit={(e) => workplacesToList(e)}>
+      <form id="workInput" onSubmit={(e) => workplacesToList(e)}>
         <h2>Berufslaufbahn</h2>
-        <div>
-          <label>Firmenname</label>
+        <div className="wData">
+          <label className="workLabel">Firmenname</label>
           <input
+            className="workInput"
             type="text"
             value={workData.firmenname}
             onChange={(e) => handleInputChange(e, "firmenname")}
           />
         </div>
 
-        <div>
-          <label>Position</label>
+        <div className="wData">
+          <label className="workLabel">Position</label>
           <input
+            className="workInput"
             type="text"
             value={workData.position}
             onChange={(e) => handleInputChange(e, "position")}
           />
         </div>
 
-        <div>
-          <label>Aufgaben</label>
+        <div className="wData">
+          <label className="workLabel">Aufgaben</label>
           <input
+            className="workInput"
             type="text"
             value={workData.aufgaben}
             onChange={(e) => handleInputChange(e, "aufgaben")}
           />
         </div>
 
-        <div>
-          <label>Beginn des Arbeitsverhältnis</label>
+        <div className="wData">
+          <label className="workLabel">Beginn des Arbeitsverhältnis</label>
           <input
+            className="workInput"
             type="text"
             value={workData.start}
             onChange={(e) => handleInputChange(e, "start")}
           />
         </div>
 
-        <div>
-          <label>Ende des Arbeitsverhältnis</label>
+        <div className="wData">
+          <label className="workLabel">Ende des Arbeitsverhältnis</label>
           <input
+            className="workInput"
             type="text"
             value={workData.ende}
             onChange={(e) => handleInputChange(e, "ende")}

@@ -16,38 +16,44 @@ interface Props {
 export default function SchoolData({ schoolData, handleInputChange, schoolToList }: Props) {
   return (
     <>
-      <form onSubmit={(e) => schoolToList(e)}>
+      <form id="schoolInput" onSubmit={(e) => schoolToList(e)}>
         <h2>Schulbildung</h2>
-        <div>
-          <label>Abschluss</label>
-          <input
-            type="text"
-            value={schoolData.abschluss}
-            onChange={(e) => handleInputChange(e, "abschluss")}
-          />
-        </div>
 
-        <div>
-          <label>Name der Bildungseinrichtung</label>
+
+        <div className="sData">
+          <label className="schoolLabel">Name der Bildungseinrichtung</label>
           <input
+            className="schoolInput"
             type="text"
             value={schoolData.nameSchule}
             onChange={(e) => handleInputChange(e, "nameSchule")}
           />
         </div>
 
-        <div>
-          <label>Fach</label>
+        <div className="sData">
+          <label className="schoolLabel">Fach</label>
           <input
+            className="schoolInput"
             type="text"
             value={schoolData.fach}
             onChange={(e) => handleInputChange(e, "fach")}
           />
         </div>
 
-        <div>
-          <label>Datum des Abschlusses</label>
+        <div className="sData">
+          <label className="schoolLabel">Abschluss</label>
           <input
+            className="schoolInput"
+            type="text"
+            value={schoolData.abschluss}
+            onChange={(e) => handleInputChange(e, "abschluss")}
+          />
+        </div>
+
+        <div className="sData">
+          <label className="schoolLabel">Datum des Abschlusses</label>
+          <input
+            className="schoolInput"
             type="text"
             value={schoolData.datumAbschluss}
             onChange={(e) => handleInputChange(e, "datumAbschluss")}

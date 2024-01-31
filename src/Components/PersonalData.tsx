@@ -6,8 +6,9 @@ type Person = {
   //dateOfBirth: new Date(),
   strasse: string;
   plz: string;
+  stadt: string;
   land: string;
-  telefon: number;
+  telefon: string;
 };
 
 interface Props {
@@ -19,60 +20,76 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
 
   return (
     <>
-      <form>
+      <form id="personalInputs">
         <h2>Persönliche Daten</h2>
-        <div>
-          <label>Vorname</label>
+        <div className="pData">
+          <label className="personalLabel">Vorname</label>
           <input
+            className="personalInput"
             type="text"
             name="vorname"
             value={personData.vorname}
             onChange={(e) => handleInputChange(e, "vorname")}
           />
         </div>
-        <div>
-          <label>Nachname</label>
+        <div className="pData">
+          <label className="personalLabel">Nachname</label>
           <input
+            className="personalInput"
             type="text"
             value={personData.nachname}
             onChange={(e) => handleInputChange(e, "nachname")}
           />
         </div>
-        {/*         <div>
-          <label>Date of Birth</label>
+        {/*<div className="pData">
+          <label className="personalLabel">Date of Birth</label>
           <input
+            className="personalInput"
             type="date"
             value={personData.dateOfBirth.toString()}
             onChange={(e) => handleInputChange(e, "dateOfBirth")}
           />
         </div> */}
-        <div>
-          <label>Straße</label>
+        <div className="pData">
+          <label className="personalLabel">Straße</label>
           <input
+            className="personalInput"
             type="text"
             value={personData.strasse}
             onChange={(e) => handleInputChange(e, "strasse")}
           />
         </div>
-        <div>
-          <label>PLZ</label>
+        <div className="pData">
+          <label className="personalLabel">PLZ</label>
           <input
+            className="personalInput"
             type="text"
             value={personData.plz}
             onChange={(e) => handleInputChange(e, "plz")}
           />
         </div>
-        <div>
-          <label>Land</label>
+        <div className="pData">
+          <label className="personalLabel">Stadt</label>
           <input
+            className="personalInput"
+            type="text"
+            value={personData.stadt}
+            onChange={(e) => handleInputChange(e, "stadt")}
+          />
+        </div>
+        <div className="pData">
+          <label className="personalLabel">Land</label>
+          <input
+            className="personalInput"
             type="text"
             value={personData.land}
             onChange={(e) => handleInputChange(e, "land")}
           />
         </div>
-        <div>
-          <label>Telefonnummer</label>
+        <div className="pData">
+          <label className="personalLabel">Telefonnummer</label>
           <input
+            className="personalInput"
             type="text"
             value={personData.telefon}
             onChange={(e) => handleInputChange(e, "telefon")}

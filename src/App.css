@@ -1,1 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
+#root {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    #allInputs {
+        grid-column: 1;
+        padding: 20px;
+
+        .pData {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            margin-bottom: 10px;
+
+            .personalLabel {
+                grid-column: 1;
+            }
+
+            .personalInput {
+                grid-column: 2;
+                width: 50%;
+            }
+        }
+
+        .sData {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            margin-bottom: 10px;
+
+            .schoolLabel {
+                grid-column: 1;
+            }
+
+            .schoolInput {
+                grid-column: 2;
+                width: 50%;
+            }
+        }
+
+        .wData {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            margin-bottom: 10px;
+
+            .workLabel {
+                grid-column: 1;
+            }
+
+            .workInput {
+                grid-column: 2;
+                width: 50%;
+            }
+        }
+
+    }
+
+    #view {
+        grid-column: 2;
+        padding: 20px;
+        background-color: rgb(25, 25, 70);
+        color: white;
+        display: grid;
+        grid-template-rows: 50px auto 50px;
+
+        #pHead {
+            height: 50px;
+        }
+        #personalView {
+            list-style: none;
+
+        }
+
+        #sHead {
+            height: 50px;
+        }
+    
+        .singleSchool {
+            list-style: none;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .sViewData {
+                grid-column: 1;
+            }
+
+            button {
+                grid-column: 2;
+            }
+        }
+    }
+    
+
+}
