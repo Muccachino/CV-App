@@ -25,12 +25,13 @@ type Workplaces = {
   ende: string
 };
 
+
 function App() {
 
   const initPerson = {
     vorname: "",
     nachname: "",
-    //dateOfBirth: new Date(),
+    dateOfBirth: "",
     strasse: "",
     plz: "",
     stadt: "",

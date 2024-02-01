@@ -3,7 +3,7 @@ import { ChangeEvent } from "react";
 type Person = {
   vorname: string;
   nachname: string;
-  //dateOfBirth: new Date(),
+  dateOfBirth: string;
   strasse: string;
   plz: string;
   stadt: string;
@@ -41,15 +41,15 @@ export default function PersonalpersonData({ personData, handleInputChange }: Pr
             onChange={(e) => handleInputChange(e, "nachname")}
           />
         </div>
-        {/*<div className="pData">
-          <label className="personalLabel">Date of Birth</label>
+        <div className="pData">
+          <label className="personalLabel">Geburtsdatum</label>
           <input
             className="personalInput"
             type="date"
-            value={personData.dateOfBirth.toString()}
+            value={(personData.dateOfBirth).toString()}
             onChange={(e) => handleInputChange(e, "dateOfBirth")}
           />
-        </div> */}
+        </div>
         <div className="pData">
           <label className="personalLabel">Straße:</label>
           <input
