@@ -17,7 +17,7 @@ interface Props {
 export default function WorkData({ workData, handleInputChange, workplacesToList }: Props) {
   return (
     <>
-      <form id="workInput" onSubmit={(e) => workplacesToList(e)}>
+      <form id="allWorkInputs" onSubmit={(e) => workplacesToList(e)}>
         <h2>Berufslaufbahn</h2>
         <div className="wData">
           <label className="workLabel">Firmenname:</label>

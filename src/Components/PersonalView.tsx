@@ -18,11 +18,9 @@ type Person = {
         <>
         <h2 id="pHead">Persönliche Daten</h2>
         <ul id="personalView">
-            <li>{allPersonData.vorname}</li>
-            <li>{allPersonData.nachname}</li>
+            <li>{allPersonData.vorname} {allPersonData.nachname}</li>
             <li>{allPersonData.strasse}</li>
-            <li>{allPersonData.plz}</li>
-            <li>{allPersonData.stadt}</li>
+            <li>{allPersonData.plz} {allPersonData.stadt}</li>
             <li>{allPersonData.land}</li>
             <li>{allPersonData.telefon}</li>
         </ul>

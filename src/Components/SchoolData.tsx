@@ -16,7 +16,7 @@ interface Props {
 export default function SchoolData({ schoolData, handleInputChange, schoolToList }: Props) {
   return (
     <>
-      <form id="schoolInput" onSubmit={(e) => schoolToList(e)}>
+      <form id="allSchoolInputs" onSubmit={(e) => schoolToList(e)}>
         <h2>Schulbildung</h2>
 
 
@@ -51,7 +51,7 @@ export default function SchoolData({ schoolData, handleInputChange, schoolToList
         </div>
 
         <div className="sData">
-          <label className="schoolLabel">Datum des Abschlusses:</label>
+          <label className="schoolLabel">Abschlussdatum:</label>
           <input
             className="schoolInput"
             type="text"

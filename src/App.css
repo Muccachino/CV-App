@@ -5,11 +5,16 @@
 
 #root {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.5fr 2fr;
 
     #allInputs {
         grid-column: 1;
-        padding: 20px;
+        padding: 70px;
+        
+
+        button {
+            width: 50%;
+        }
 
         .pData {
             display: grid;
@@ -22,7 +27,7 @@
 
             .personalInput {
                 grid-column: 2;
-                width: 70%;
+                width: 330px;
                 height: auto;
                 font-size: medium;
                 padding: 5px 5px 5px 10px;
@@ -41,11 +46,12 @@
 
             .schoolInput {
                 grid-column: 2;
-                width: 350px;
+                width: 330px;
                 height: auto;
                 font-size: medium;
                 padding: 5px 5px 5px 10px;   
                 justify-self: end;
+                
             }
  
         }
@@ -62,7 +68,7 @@
 
             .workInput {
                 grid-column: 2;
-                width: 70%;
+                width: 330px;
                 height: auto;
                 font-size: medium;
                 padding: 5px 5px 5px 10px;            
@@ -74,37 +80,73 @@
 
     #view {
         grid-column: 2;
-        padding: 20px;
+        border-radius: 5px;
+        margin: 10px;
+        width: 80%;
+        padding: 70px;
         background-color: rgb(25, 25, 70);
-        color: white;
-        display: grid;
-        grid-template-rows: 50px auto 50px;
-
+        --h2-color: white;
+        display: flex;
+        flex-direction: column;
         #pHead {
-            height: 50px;
+            text-decoration: underline;
+            margin-bottom: 20px;
         }
         #personalView {
-            list-style: none;
+            padding-left: 30px;
+            li {
+                list-style-type: none;
+                color: white;
+            }
+            
 
         }
 
         #sHead {
-            height: 50px;
+            margin: 20px 0 10px 0;
+            text-decoration: underline;
         }
     
         .singleSchool {
-            list-style: none;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
+            color: white;
+            margin-top: 20px;
+            padding-left: 30px;
 
-            .sViewData {
-                grid-column: 1;
+            li {
+                list-style-type: none;
+            }
+            button {
+                width: 20%;
+                height: 50px;
+                padding: 5px;
+                margin-top: 20px;
             }
 
+        }
+
+        #wHead {
+            text-decoration: underline;
+            margin: 20px 0 10px 0;
+        }
+
+
+        .singleWork {
+            margin-top: 20px;
+            padding-left: 30px;
+            li {
+                list-style-type: none;
+                color: white;
+            }
+    
             button {
-                grid-column: 2;
+                margin-top: 20px;
+                width: 20%;
+                height: 50px;
+                padding: 5px;
             }
         }
+
+  
     }
     
 
